@@ -1,6 +1,5 @@
-import type { Config } from "tailwindcss";
-
-export default {
+/** @type {import('tailwindcss').Config} */
+module.exports = {
   content: [
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
@@ -12,11 +11,12 @@ export default {
   theme: {
     extend: {
       colors: {
+        customBlue: "#044e83", // yahan tumhara custom color
+        sky:'#2eb6e8',
         
-        background: "var(--background)",
-        foreground: "var(--foreground)",
       },
     },
   },
   plugins: [],
-} satisfies Config;
+}
+
